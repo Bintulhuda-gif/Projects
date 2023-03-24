@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.main{
+    width: 100%;
+    background: linear-gradient(to top,rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%),url(/nature-3082832__340.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.navbar{
+    width:95%;
+    height: auto;
+    margin-left: 30px;
+}
+.logo{
+    color: rgb(180, 113, 30);
+    font-size: 40px;
+    font-family: cursive;
+    float: left;
+    padding-top: 10px;
+    cursor: pointer;
+}
+.menu{
+    width:600px;
+    float: left;
+    height: 70px;
+}
+ul{
+    float: left;
+    display: flex;
+    padding-top: 30px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 14%;   
+}
+ul li{
+    list-style: none;
+    margin-left: 60px;
+    font-size: 16px;
+}
+ul li a{
+    text-decoration: none;
+    color: beige;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bolder;
+}
+ul li a:hover{
+    color:rgb(180, 113, 30);
+}
+.search-box{
+    float: right;
+    width: 240px;
+    background: #fff;
+    height: 30px;
+    padding: 5px;
+    border-radius: 15px;
+    margin-top: 1%;
+    margin-right: 2%;
+}
+.search-box .search-txt{
+    width: 190px;
+    padding: 0 6px;
+}
+.search-btn{
+    text-decoration: none;
+    background-color: #fff;
+    color: black;
+    display: flex;
+    float: right;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+}
+.search-txt{
+    border: none;
+    background: none;
+    outline: none;
+    float:left;
+    color: #000;
+    font-size: 16px;
+    line-height: 30px;
+}
+.title{
+    position: absolute;
+    top:40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.title h1{
+    cursor: pointer;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: whitesmoke;
+    font-size: 80px;
+}
+.button{
+    position: absolute;
+    top:51%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+   
+}
+.btn{
+    color:wheat;
+    padding: 5px 20px;
+    font-size: 20px;
+    background-color: rgb(180, 113, 30);
+    text-decoration: none;
+    border: 1px solid black;
+    transition: 0.3s ease;
+
+}
+.btn:hover{
+    color: #000;
+}
