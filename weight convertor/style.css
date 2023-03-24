@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    background: linear-gradient(rgb(17, 151, 224),rgb(119, 119, 216));
+}
+.container{
+    background-color: #ffff;
+    width:50vh;
+    max-width: 28em;
+    padding:50px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 8px;
+    
+   
+}
+h2{
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 20px;
+    color:rgb(2, 2, 45);
+}
+.input-wrapper label{
+    display: block;
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 10px;
+
+}
+.input-wrapper:not(:last-child){
+    margin-bottom: 20px;
+}
+.input-wrapper input{
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+}
+@media screen and(min-width:393) {
+    .container{
+        max-width: 300px;
+    }
+}
