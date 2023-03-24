@@ -1,0 +1,744 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Oswald:wght@200;300;400;500;600;700&family=Source+Serif+Pro:ital,wght@0,300;0,400;0,600;0,700;0,900;1,300;1,400;1,600;1,700&display=swap');
+*{
+    font-family: 'Oswald', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    transition: all .2s linear;
+}
+html{
+    font-size: 25px;
+    overflow-x: hidden;
+}
+body{
+    background-color: rgb(34, 33, 33);
+    overflow-x: hidden;
+    padding-left:16rem;
+    
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    height: 100%;
+    width:30%;
+    background: rgb(48, 45, 45);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    text-align: center;
+    overflow: scroll;
+}
+header .user img{
+    height:200px;
+    width:200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-top:150px;
+    border: 2px solid #ff0000; 
+    
+}
+header .user h3{
+    color: whitesmoke;
+    font-size: 30px;
+}
+header .user p{
+    color: whitesmoke;
+    font-size: 30px;
+}
+header .navbar{
+    width: 100%;
+}
+header .navbar ul{
+    list-style: none;
+    padding:0 50px 0 50px;
+    
+} 
+header .navbar ul li a{
+    display: block;
+    padding: 5px;
+    background-color:#ff0000;
+    color: black;
+    font-size:15px;
+    margin: 10px;
+    border-radius:none;
+}
+header .navbar ul li a:hover{
+    background-color:#cc6c6c;
+}
+header .icons{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header .icons ul{
+    padding: 1rem;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+header .icons ul li{
+    width:50px;
+    margin: 10px;
+    height: 50px;
+    padding: 8px;
+    font-size: 25px;
+    border-radius: 50%;
+    border: 1px solid rgb(195,194,211);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+header .icons ul li a{
+    color: white;
+}
+header .icons ul li:hover{
+    transform: translate(5px,-5px);
+}
+.fb i,.fb{
+    color: white;
+    background-color: blue;
+}
+.twit i,.twit{
+    color:white;
+    background-color:#00acee;
+}
+.insta i,.insta{
+   color:white;
+   background: linear-gradient(#feda75,#fa7e1e, #d62976,#962fbf,#4f5bd5);
+}
+.lin i,.lin{
+    color: white;
+    background-color:#0A66C2;
+}
+#menu{
+    position: fixed;
+    top:2rem;
+    right: 2rem;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+    font-size: 25px;
+    padding: 20px;
+    z-index:1000;
+    display:none;
+}
+
+section{
+    height:400px;
+}
+.about{
+    display: flex;
+    flex-flow: column;
+    padding:30px;
+    margin-top: -30px;
+}
+
+.about h3{
+    font-size: 30px;
+    color: #ff0000;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.about p{
+    font-size: 20px;
+    color: whitesmoke;
+    text-align: justify;
+    line-height: 35px;
+    margin-bottom: 20px;
+    font-weight: 300;
+}
+.about h5{
+    color:whitesmoke;
+    margin-bottom: 20px;
+    font-weight: 200;
+    font-size: 15px;
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+    gap:20px;
+    margin-top: 20px;
+    text-transform: capitalize;
+    
+}
+   .down-btn:hover{
+       background-color: rgb(214, 18, 18);
+       color: whitesmoke;
+       border: none;
+       transition: .5s;    
+        }
+   .down-btn{
+       background-color:transparent;
+       color: whitesmoke;
+       border: 2px solid red;
+       transition: .5s;
+       padding: 10px 25px;
+       font-size:15px;
+   }
+   .view-btn:hover{
+       background:blue;
+       color: white;
+       border: none;     
+   }
+   .view-btn{
+       background-color:transparent;
+       color: whitesmoke;
+       border: 2px solid  rgb(75, 75, 172);;
+       transition: .5s;
+       padding: 10px 25px;
+       font-size:15px;
+   }
+.container{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.services{
+    margin-top: 30px;
+}
+.services h3{
+    font-size: 30px;
+    color:#ff0000;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.card{
+    flex-basis: 17%;
+    margin: 20px 10px;
+    padding: 20px 0;
+    box-shadow:0px 0px 10px gray;
+    background-color:whitesmoke;
+    text-align: center;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border:none;
+}
+.card h4{
+    padding: 10px 0;
+    font-size: 17px;
+    font-weight: bolder;  
+    color: #ff0000; 
+    
+}
+.card img{
+    height: 100px;
+    width: 100px;  
+    
+}
+.card:hover{
+    background-color: #bd6060;
+}
+
+#skills{
+    width: 100%;
+    height:auto;
+    padding:20px; 
+    background-color: #fff;  
+}
+.skill-header{
+    width: 100%;
+
+    text-align: center;
+}
+#skills .title{
+    padding: 10px 0;
+    margin-top: -20px;
+    font-size: 30px;
+    font-weight: bolder;  
+    color: #ff0000; 
+    text-align: center;
+}
+.skill-header h4{
+    text-align: left;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    text-transform: capitalize;
+}
+.skill-main .info{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+.skill-main .bar{
+    width: 100%;
+    height: 10px;
+    background-color:rgba(0,0,0,0.199);
+    position: relative;
+    border-radius: 25px;
+    margin-top: 5px;
+}
+.skill-main .bar span{
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    background-color:#ff0000;
+    border-radius: 25px;
+}
+.skill-main .info .percent{
+   font-weight: bolder;
+   font-size: 15px;
+}
+.skill-main .info .para{
+    font-weight: bolder;
+   font-size: 15px;
+}
+.skill-main .bar .php{
+    width:90%;
+    animation: php 3s;
+}
+@keyframes php{
+    0%{
+        width: 0;
+    }
+    100%{
+        width:90%
+    }
+}
+.skill-main .bar .asp{
+    width:80%;
+    animation: asp 3s;
+}
+@keyframes asp{
+    0%{
+        width: 0;
+    }
+    100%{
+        width:80%
+    }
+}
+.skill-main .bar .java{
+    width:60%;
+    animation: java 3s;
+}
+@keyframes java{
+    0%{
+        width: 0;
+    }
+    100%{
+        width:60%
+    }
+}
+.skill-main .bar .photshop{
+    width:60%;
+    animation: photoshop 3s;
+}
+@keyframes photoshop{
+    0%{
+        width: 0;
+    }
+    100%{
+        width:60%
+    }
+}
+.skill-main .bar .illustrator{
+    width:80%;
+    animation: illustrator 3s;
+}
+@keyframes illustrator{
+    0%{
+        width: 0;
+    }
+    100%{
+        width:80%
+    }
+}
+.skill-main .bar .video{
+    width:60%;
+    animation: video 3s;
+}
+@keyframes video{
+    0%{
+        width: 0;
+    }
+    100%{
+        width:60%
+    }
+}
+.portfolio{
+    height: max-content;
+}
+
+.portfolio .box-container{
+     display: flex;
+     align-items: center;
+     justify-content:space-evenly;
+     flex-wrap: wrap;
+     padding: 20px 0;
+     margin-top: 30px;
+
+}
+.portfolio .box-container .box{
+    height:150px;
+    width:28%;
+    border:none;
+    margin: 15px;
+    background-color: whitesmoke;
+    cursor: pointer;
+}
+.portfolio .box-container .box:hover{
+    transform: translateY(-20%);
+    opacity:0.7;
+}
+.portfolio .box-container h6{
+    text-align: center;
+    color: #ff0000;
+    font-size: 25px;
+    position: relative;
+    top: 40%;
+   
+}
+.portfolio .title{
+padding: 10px 0;
+font-size: 30px;
+font-weight: bolder;  
+color: #ff0000; 
+text-align: center;
+}
+.contact{
+    margin-top:20px;
+    background-color: #fff;
+    height: max-content;
+}
+.contact .row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.contact .row .content{
+    flex: 50px;
+    padding: 10px;
+    padding-bottom: 0;
+}
+.contact .row form{
+    flex:50px 30px;
+    padding:20px;
+    margin: 20px;
+    margin-bottom:10px;
+}
+.contact .row form .box{
+    padding: 10px;
+    margin: 5px 0;
+    background-color: transparent;
+    border: 2px solid #ff0000;
+    font-size: 15px;
+    width: 100%;
+    color: #ff0000;
+}
+.contact .row form .box-message{
+    height: 100px;
+    width: 100%;
+    padding: 10px;
+    margin: 5px;
+    background-color: transparent;
+    border: 2px solid #ff0000;
+    font-size: 15px;
+    width: 100%;
+    resize: none;
+    color: white;
+}
+.contact .row form .box-message::placeholder{
+    color: #a15e5e;
+}
+.contact .title{
+    color: #ff0000;
+    font-size: 30px;
+    text-align: center;
+    padding-bottom:5px;
+}
+.contact .row form .class-btn{
+    background-color:#ff0000;
+    padding:10px;
+    width: 40%;
+    position: relative;
+    left: 60px;
+ transform: translate(50%,50%);
+}
+.contact .row .content .info{
+    display: flex;
+    flex-direction: row;
+   
+}
+.contact .row .content .info h3{
+   
+    color: white;
+    font-size:20px;
+    padding: 10px 0;
+    font-weight: normal;
+    margin: auto;
+  
+}
+.contact .row .content .info h3 i{
+    font-size: 20px;
+    color:#ff0000;
+    padding-right:20px;
+    }
+.contact .row .content .info span{
+    color:#ff0000;
+    font-size: 15px;
+    padding-right:20px;
+   margin-left: 45px;
+}
+.experience{
+    margin-top:20px;
+    height: max-content;
+}
+.experience .contents{
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+.experience .contents .box{
+    width:40%;
+    
+    border-left: 2px solid #fff;
+    position: relative;
+    font-size: 20px;
+}
+.experience .contents .box h4{
+    color:#ff0000;
+    text-align: center;
+    
+}
+.experience .contents .box h3{
+    color: white;
+    font-size: 20px;
+    padding-top: 10px;
+    padding-left: 10px;
+    
+}
+.experience .contents .box p{
+    color:whitesmoke;
+    font-weight: normal;
+    font-size: 15px;
+    padding: 10px;
+}
+.experience .contents .box i{
+    position: absolute;
+    top:-10px;
+    left:-8px;
+    color: #ff0000;
+    font-size: 15px;
+}
+.experience .title{
+    color: #ff0000;
+    font-size: 30px;
+   
+    text-align: center;
+    padding-bottom:40px;
+}
+/*-----------Appointment CSS---------*/
+.appointment{
+    margin-top: 20px;
+    background-color: #fff;
+    height: max-content;
+}
+.appointment .title{
+    color: #ff0000;
+    font-size: 30px;
+    text-align: center;
+    padding-bottom:10px;
+}
+.appointment .wrapper{
+  display: flex;
+  width: 50%;
+  height: 100vh;
+  margin:auto;
+  
+}
+.calender{
+    margin: auto;
+    width: 600px;
+   
+    background-color: #fff;
+    box-shadow: 0px 0px 15px 3px rgba(0,0,0,0.2);
+}
+.month{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 30px 20px;
+    text-align: center;
+    background-color:black;
+    color: white;
+}
+   
+.weekends{
+    background-image: linear-gradient(#dd2e2e,#f7987c);
+    display: flex;
+    padding: 7px 0;
+}
+.weekends div{
+    width: 14.30%;
+    text-align: center;
+}
+.days{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 7px 0;
+    font-weight: 300;
+    text-align: center;
+
+}
+.days div{
+    width: 14.28%;
+    text-align: center;
+    margin-bottom: 3px;
+    padding: 10px 0;
+    transition:all 0.4s;
+    
+}
+.today{
+    background-color: red;
+    color: whitesmoke;
+    font-weight: bolder;
+}
+.days div:hover{
+    background-color: #dfe6e9;
+    cursor: pointer;
+}
+.previous{
+    color:#555;
+}
+
+#month{
+    font-size: 30px;
+    font-weight: 500;
+}
+.pre,.next{
+    width: 50px;
+    height: 50px;
+    background-color: rgba(31, 29, 29, 0.993);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s;
+}
+
+.pre:hover,.next:hover{
+    background-color: rgba(70, 66, 66, 0.945);
+    cursor: pointer;
+}
+.appointment .container{
+    display: flex;
+    width: 60%;
+    margin: auto;
+   
+    background-color:#fff;
+    justify-content: center; 
+    margin-bottom: 20px;
+ 
+  }
+.appointment .time{
+   text-align: center;
+    color: red;
+    width: 100%;
+    font-size: 30px;
+   
+}
+.appointment .box-container{
+  
+   flex-wrap: wrap;
+  display: flex;
+   border: 2px solid red;
+ 
+   justify-content: center;
+  align-items: center;
+ 
+}
+.appointment .box-container .box{
+    width:28%;
+    border:none;
+    margin: 15px;
+    background-color:rgba(70, 66, 66, 0.945);
+    cursor: pointer;
+    padding:30px;
+    margin-bottom: 20px;
+}
+.appointment .btn{
+    background-color: red;
+    padding: 20px;
+    width:40%;
+    margin-bottom: 10px;
+}
+.blogs{
+    margin: 20px;
+    height: max-content;
+}
+
+.blogs .title{
+        color: #ff0000;
+        font-size: 30px;
+        text-align: center;
+        padding-bottom:10px;
+}
+.blogs .subtitle{
+    color: whitesmoke;
+    font-size: 20px;
+    font-weight: 400;
+    padding-left: 90px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+   
+}
+.blogs .view{
+    color:white;
+    font-size: 20px;
+    font-weight: 400;
+    padding-left: 500px;
+}
+.blogs .other{
+    color:red;
+    font-size: 20px;
+    font-size: 500;
+    padding-left: 20px; 
+}
+.blogs .box-container{
+  width:80%;
+  margin: auto;
+  display: flex;
+ 
+  justify-content: center;
+  align-items: center;
+}
+.blogs .box-container .box{
+    width:30%;
+    padding: 50px;
+    background-color: whitesmoke;
+    margin:20px
+   
+}
+.blogs .box-container .box .inside{
+    background-color: red;
+    width:100px;
+    padding: 5px;
+    font-size: 10px;
+    font-weight: bold;
+    text-align: center;
+   
+   
+
+}
+
