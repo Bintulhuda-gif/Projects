@@ -1,0 +1,277 @@
+.bgimage {
+    height:100vh;
+    background:linear-gradient(#0172af,#fff9d2);
+    background-size:cover;
+    position:relative;
+}
+
+/* text css above hero image*/
+.hero_title {
+    font-size: 90px;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+.hero_desc {
+    font-size: 50px;
+   font-weight: 700;
+
+}
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+.btn{
+    padding: 10px;
+    font-weight: 600;
+    margin:10px;
+    font-size: 20px;
+}
+.down-btn{
+   background-color: rgb(7, 7, 90);
+    color: white;
+    border-radius: 30px;
+}
+.view-btn{
+    background-color: rgb(1, 43, 5);
+    color: white;
+    border-radius: 30px;
+}
+.view-btn:hover{
+    background-color: rgba(88, 185, 104, 0.7);
+    border: 2px solid rgb(1, 43, 5);
+    color: white;
+    
+}
+.down-btn:hover{
+    background-color: rgba(87, 99, 212, 0.7);
+    border: 2px solid rgb(7, 7, 90);
+    color: white;
+
+}
+/* about section image css */
+.imageAboutPage {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-top: -40px;
+    
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+}
+#about h1{
+    color: #0172af;
+    font-size: 35px;
+    font-weight: 700;
+    text-align: center;
+    padding-bottom: 30px;
+}
+#about p{
+    font-weight: 500;
+
+}
+#about .paratext{
+    text-align: justify;
+    
+}
+/* services section css */
+#services{
+    background-color: #278fc7;
+    padding: 20px;
+}
+#services h1{
+    color: #fff;
+    font-size: 50px;
+}
+.servicesText.card {
+   
+    cursor: pointer;
+  }
+.servicesIcon {
+    font-size: 34px;
+    text-align: center;
+    width: 100%;
+    color: #0172af;
+}
+.card-title {
+    text-align: center;
+    color: #04334d;
+    font-weight: 700;
+}
+.card:hover .servicesIcon {
+    color: #063147;
+   
+}
+.card-text{
+    font-weight: 500;
+    text-align: justify;
+    font-size: 15px;
+}
+.servicesText:hover {
+    border: 1px solid #0172af;
+    transform: translateY(-8px);
+   
+}
+
+/* display background color black on navbar scroll */
+.navbarScroll {
+    background-color: #0172af;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.nav-link{
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    margin-left: 20px;
+}
+.nav-link:hover{
+    color:lemonchiffon;
+    text-decoration: overline;
+}
+.navbar-brand:hover{
+color:#063147;
+}
+.navbar-brand{
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+}
+#portfolio{
+    padding-bottom: 20px;
+}
+#portfolio h1{
+    color: #0172af;
+    font-size: 50px;
+}
+#portfolio .card{
+    background-color: #0172af;
+    color: white;
+}
+#portfolio .card:hover{
+    transform: translateY(-10px);
+}
+#portfolio .card-title{
+    color: #fff;
+}
+.blog_wrapper .card {
+    position: relative;
+    cursor: pointer;
+}
+.blog_wrapper{
+    background-color:#278fc7;
+    margin-top: 20px;
+}
+.blog_wrapper h2{
+    color: white;
+    font-size: 50px;
+}
+.blog_wrapper h5{
+    color: #0172af;
+    font-weight: 700;
+    font-size: 30px;
+    text-align: center;
+    padding: 20px;
+}
+.blog_wrapper p{
+    text-align: justify;
+    padding: 20px;
+}
+
+.blog_wrapper .card:hover .blog_details {
+    background: rgba(193, 195, 204, 0.2);
+}
+
+/*appointmnet*/
+#appointment{
+    background-color: #ccd5da;
+   padding: 30px;
+}
+#appointment h2{
+    color: #0172af;
+    font-size: 50px;
+}
+#appointment .btn-app{
+    background-color: rgb(9, 112, 153);
+    color: #fffaf0;
+    border-radius: 0%;
+    margin: auto;
+    padding: auto;
+}
+#appointment .btn-app:hover{
+    background:transparent;
+    border: 2px solid red;
+    color: black;
+}
+.modal-body{
+    background-color: rgba(194, 197, 150, 0.05);
+    padding: 20px;
+}
+.modal-header h1{
+    
+    font-size: 40px;
+    color: #962f12;
+}
+
+.form-group{
+    margin: 10px;
+    font-weight:bold;
+}
+
+/* social media icons styling */
+.social-icons {
+    font-size: 30px;
+    cursor: pointer;
+}
+.fa-facebook-f:hover,.fa-instagram:hover,.fa-twitter:hover,.fa-linkedin-in:hover, .fa-twitch:hover {
+    color: #008000;
+}
+.fab {
+    color: white;
+    text-align: center;
+    background-color: #021620;
+    padding: 20px;
+    border-radius: 50%;
+}
+#footer {
+    text-align: center;
+}
+/* footer styling */
+
+/* spacing on all sections */
+#about, #services, #portfolio, #contact {
+    margin-top: 10px;
+    padding-top: 10px;
+}
+#contact {
+    padding-bottom: 4rem;
+    background-color: #278fc7;
+}
+#contact h1{
+    color: white;
+    font-size: 50px;
+}
+
+#contact .col-2 a{
+    color: #fff;
+    margin: 20px;
+    padding: 20px;
+    text-decoration: none;
+    display: flex;
+}
+#contact .col-2 i{
+   margin-right: 20px;
+}
+@media screen and (min-width:200px) {
+    #contact .col-2{
+       width: 100%;
+       display: inline-block;
+        
+    }
+    #contact .col-10{
+        width: 80%;
+        padding-left: 20px;
+    }
+    
+}
